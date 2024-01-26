@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: young;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+body , html {
+
+    font-family: outfit;
+    background-color: var(--Eggshell);
+    display: grid;
+    place-items: center;
+margin: 1vw auto;
+height: 100vh;
+font-size: 16px;
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+ max-width: 800px;
+ background-color: var(--White);
+ padding: 2vw;
+ border-radius: 20px;
+}
+
+.main .image img{
+  width: 100%;
+ border-radius: 10px;
+
+}
+
+.content{
+    font-family: outfit;
+    margin: 1vw 0;
+}
+
+.content h1{
+    font-family: young;
+    color:var(--DarkCharcoal) ;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.content p{
+    padding: 1vw 0;
+    color: var(--WengeBrown);
+    font-size: 1.1rem;
+}
+ .prep{
+    padding: 1vw;
+margin: 1vw 0;
+    background-color: hsla(332, 51%, 32%, 0.256);
+    font-weight: 400;
+    border-radius: 10px;
+ 
+    
+ }
+  h3{
+    color: var(--DarkRaspberry);
+    font-size: 1.5rem;
+ }
+
+
+
+.ingre h3{
+    color: var(--DarkRaspberry);
+    font-size: 2rem;
+    font-family: young;
+    font-weight: 400;
+
+    
+}
+
+hr{
+    margin: 1vw 0;
+}
+
+ h3{
+    font-size: 2.5rem;
+    font-family: young;
+
+    font-weight: 400;
+    color: var(--DarkRaspberry);
+}
+
+ span{
+    color: var(--DarkCharcoal);
+    font-weight: 700;
+    padding:  0 0.2vw 0 0;
+ }
+ ul{
+    font-size: 1rem;
+    color: var(--WengeBrown);
+    font-weight: 400;
+ }
+ ul li{
+    
+    color: var(--WengeBrown);
+    font-weight: 600;
+    margin: 1vw 1.5vw ;
+ }
+ .instruc ul{
+    list-style-type:decimal;
+ }
+
+@media screen and (max-width:431px) {
+    body{
+        margin: 0;
+    }
+    .main{
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+    }
+    img{
+        border-radius: 0;
+    }
+    .content{
+        padding: 3vw;
+    }
+    ul li{
+        margin: 2vw 6vw;
+    }
+    
+}
